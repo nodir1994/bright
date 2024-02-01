@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".menu-toggle button").on("click", function () {
     $("body").toggleClass("open");
   });
-  $(".menu_nav li").on("click", function () {
+  $(".menu_nav li, .footer_menu_block li").on("click", function () {
     $("body").removeClass("open");
     console.log($(this).data('target'));
     $('html, body').animate({
