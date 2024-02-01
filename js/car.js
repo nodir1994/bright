@@ -9,7 +9,7 @@ document.addEventListener("scroll", (e) => {
   }
 });
 
-
+if($(window).width()>1199){
 
 let cursorInit = !1;
 const cursor = document.getElementById("bubble-cursor"),
@@ -23,7 +23,7 @@ let timeoutID=200, hoverButton, hoverTL, lastFrame = 0,
     idle = !1;
 class HoverButton {
     constructor(e) {
-      console.log("hover "+e);
+    //   console.log("hover "+e);
         this.hovered = !1, this.animatingHover = !1, this.forceOut = !1, this.timing = .65, this.el = document.getElementById(e)
     }
     onMouseEnter() {this.hoverInAnim()}
@@ -126,3 +126,4 @@ const onMouseMove = e => {
         inkMobile.matches || inkTablet.matches || cursorInit || (cursorInit = !0, init())
     };
 inkMediaObserver(), inkTablet.addListener(inkMediaObserver), inkMobile.addListener(inkMediaObserver);
+}
