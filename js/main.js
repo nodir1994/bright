@@ -66,4 +66,33 @@ $(document).ready(function () {
       node.style.animationDelay = `${index * 0.3}s`;
     });
   });
+
+  var swiperFaculties = new Swiper('#building .swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '#building .swiper-button-next',
+      prevEl: '#building .swiper-button-prev',
+    },
+    autoplay: {
+      delay: 4000
+    },
+    loop: true,
+    pagination: {
+      el: '#building .swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      // 767: {
+      //   slidesPerView: 1
+      // },
+      // 991: {
+
+      // },
+      // 1250: {
+      //   slidesPerView: 2
+      // },
+    }
+  });
 });
