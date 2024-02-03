@@ -6,7 +6,7 @@ $(document).ready(function () {
     $("body").removeClass("open");
     let headerHeight = 0;
   if ($(window).width() < 768) {
-    headerHeight = 80
+    headerHeight = 60
   }
     $("html, body").animate({
       scrollTop: $("" + $(this).data("target") + "").offset().top-headerHeight,
