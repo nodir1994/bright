@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
   });
 
-  if ($(window).width() > 1199) {
+  if ($(window).width() > 1399) {
     const pupil = document.querySelector(".fone img");
     window.addEventListener("mousemove", (e) => {
       var rect = pupil.getBoundingClientRect();

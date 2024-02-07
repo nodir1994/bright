@@ -21,7 +21,7 @@ document.addEventListener("scroll", (e) => {
   }
 });
 
-if ($(window).width() > 1199) {
+if ($(window).width() > 1399) {
   let cursorInit = !1;
   const cursor = document.getElementById("bubble-cursor"),
     amount = 30,
